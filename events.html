@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+.header{
+        text-align: center;
+      }
+      body {
+        font-size: 20px;
+        background-color: black;
+        color:#ff9f03;
+        font-family: sans-serif;
+      }
+      /*=================================*/
+      .navbar {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        background-image: linear-gradient(black,#ff9f03);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        font-size: 30px; 
+        font-style:oblique;
+      }
+      .navbar li {
+        float: left;
+      }
+      .navbar li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px 15px;
+        text-decoration: none;
+      }
+      .navbar li a:hover {
+        background-image: linear-gradient( black, rgb(170, 170, 170));
+        color:  #ff9f03;
+      }
+      /*========================================*/
+
+      .jenis-kelas ul.a{
+        list-style-type: circle;
+      }
+  
+      .active {
+        background-image: linear-gradient(black,rgb(255, 74, 61))
+      }
+      #more {display: none;}
+      #more1 {display: none;}
+
+      .footer {
+        background-color: #ff9f03;
+        text-align: center;
+      }
+        </style>
+    </head>
+          <body>
+
+<div class="header">
+  <img src = "ninja.png" alt="blackk">
+</div>
+
+<ul class="navbar">
+  <li><a href="index.html"><img src = "house.png" alt="blackk" style="height: 25px;">Home</a></li>
+  <li><a  href="about.html">About Us</a></li>
+  <li><a class="active" href="events.html">Events</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li><a href="regis.html">Registration</a></li>
+</ul>
+
+<h3><img src="show1.PNG" alt="error"></h3>
+<p>Berikut adalah salah satu contoh show dari UKM kami<span id="dots">...</span>
+<span id="more"></br>Kegiatan tersebut berlangsung sangat baik dan disambut dengan sangat antusias dengan para penonton yang ada</span></p>
+<button onclick="myFunction1()" id="myBtn">Read more</button>
+
+<h3><img src="show2.PNG" alt="error"></h3>
+<p>Berikut adalah salah sau contoh cosplay ninja cewek<span id="dots1">...</span>
+<span id="more1"></br>dari UKM kami. dia telah mengikuti kelas expert dan itu hasilnya sudah seperti ninja bukan ?</span></p>
+<button onclick="myFunction2()" id="myBtn1">Read more</button>
+
+<br></br>
+
+<div class="footer"><img src = "ninjac.png" alt="blackk"></div>
+          </body>
+</html>
+<script>
+  function myFunction1() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+
+  function myFunction2() {
+    var dots = document.getElementById("dots1");
+    var moreText = document.getElementById("more1");
+    var btnText = document.getElementById("myBtn1");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>

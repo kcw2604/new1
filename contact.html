@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+.header{
+        text-align: center;
+      }
+      body {
+        font-size: 20px;
+        background-color: black;
+        color:#ff9f03;
+        font-family: sans-serif;
+      }
+      /*=================================*/
+      .navbar {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        background-image: linear-gradient(black,#ff9f03);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        font-size: 30px; 
+        font-style:oblique;
+      }
+      .navbar li {
+        float: left;
+      }
+      .navbar li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px 15px;
+        text-decoration: none;
+      }
+      .navbar li a:hover {
+        background-image: linear-gradient( black, rgb(170, 170, 170));
+        color:  #ff9f03;
+      }
+      /*========================================*/
+
+      .jenis-kelas ul.a{
+        list-style-type: circle;
+      }
+  
+      .active {
+        background-image: linear-gradient(black,rgb(255, 74, 61))
+      }
+
+      .footer {
+        background-color: #ff9f03;
+        text-align: center;
+      }
+      button{
+        background-color: transparent;
+        color: white;
+      }
+      table{
+        background-image: linear-gradient(black,#ff9f03);
+      }
+
+        </style>
+    </head>
+          <body>
+
+<div class="header">
+  <img src = "ninja.png" alt="blackk">
+</div>
+
+<ul class="navbar">
+  <li><a  href="index.html"><img src = "house.png" alt="blackk" style="height: 25px;">Home</a></li>
+  <li><a  href="about.html">About Us</a></li>
+  <li><a href="events.html">Events</a></li>
+  <li><a  class="active" href="contact.html">Contact Us</a></li>
+  <li><a href="regis.html">Registration</a></li>
+</ul>
+<h3>Temukan Kami Disini!</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.402494501888!2d112.58683485039545!3d-7.95729098146724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78825bc65e176b%3A0x954b33ee83283be2!2sUniversitas%20Ma%20Chung!5e0!3m2!1sen!2sid!4v1602985261076!5m2!1sen!2sid" 
+        width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<h3>Ada Yang ingin anda sampaikan ?</h3>
+<table>
+  <tr>
+    <td>Nama:</td>
+    <td><input type="text" name="txtnama" id="txtnama"></td>
+  </tr>
+  <tr>
+    <td>Email:</td>
+    <td><input type="email" name="txtemail" id="txtemail"></td>
+  </tr>
+  <tr>
+    <td>Pesan:</td>
+    <td><input type="text" name="txtpesan" id="txtpesan" minlength=""></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><button id="btn1" onclick="simpandata()">Submit</button></td>
+  </tr>
+</table>
+<h3>Atau anda juga bisa menghubungi kami lewat:</h3>
+<h3><img src="phone.png" alt="error" style="height: 25px;">  082231818881</h3>
+<h3><img src="mail.png" alt="error" style="height: 25px;">  UKMninja@yahoo.com</h3>
+<h3><img src="man.png" alt="error" style="height: 25px;">  ID LINE: kevincw_kcw</h3>
+
+<div class="footer"><img src = "ninjac.png" alt="blackk"></div>
+          </body>
+</html>
